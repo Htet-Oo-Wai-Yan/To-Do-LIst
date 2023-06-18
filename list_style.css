@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --text_Color : #ececec;
+    --back_Color : #142d4c;
+    --btn_Color : #385170;
+    --spec_Color: #f95959;
+}
+
+body{
+    background-color: var(--back_Color);
+    color: var(--text_Color);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header h1{
+    font-size: 30px;
+}
+
+.list-frame{
+    width: 420px;
+    background-color: var(--btn_Color);
+    border-radius: 10px;
+    
+    padding: 10px;
+    margin: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+    
+}
+
+.list-frame > div{
+    padding: 5px;
+    margin: 5px;
+}
+
+.tasks{
+    list-style-type: none;
+
+}
+
+.list-task{
+    background-color: var(--back_Color);
+    border-radius: 5px;
+
+    padding: 15px;
+    margin: 15px;
+}
+
+.stages{
+    text-align: left;
+}
+
+.stages > span:nth-child(1){
+    margin: -10px 0;
+}
+
+.stages > span{
+    margin: 10px 5px;
+    
+}
+
+
+.condition{
+    font-weight: bold;
+    color: red;
+    background-color: var(--text_Color);
+    border-radius: 5px;
+    font-size: 12px;
+
+    padding: 3px;
+}
+
+.time{
+    font-weight: bold;
+    color: blue;
+    background-color: var(--text_Color);
+    font-size: 12px;
+    border-radius: 5px;
+
+    padding: 3px;
+}
+
+.catagoery{
+    font-weight: bold;
+    color: green;
+    background-color: var(--text_Color);
+    font-size: 12px;
+    border-radius: 5px;
+
+    padding: 3px;
+}
+
+.create-btn{
+    width: 330px;
+    color: var(--spec_Color);
+    background-color: var(--text_Color);
+    font-weight: 600;
+    font-size: 22px;
+    border: 1px solid var(--btn_Color);
+    border-radius: 5px;
+
+    padding: 10px;
+}
